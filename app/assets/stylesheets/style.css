@@ -1,3 +1,13 @@
+.fw-bold {
+  color: white;
+  background-color: black;
+}
+
+.lead-text {
+  color: white;
+  background-color: black;
+}
+
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -6,11 +16,48 @@
   min-height: calc(100vh - 161px);
 }
 
+.detail__title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.post__user{
+  display: block;
+  font-size: 30px;
+  color: #999;
+  text-decoration: underline;
+}
+
 .inner {
   width: 1024px;
   margin: 0 auto;
 }
 
+.filter {
+  -ms-filter: blur(6px);
+  filter: blur(30px);
+}
+
+
+.post__wrapper{
+  min-height: calc(100vh - 161px);
+}
+
+.comments_lists{
+  padding-left: 20px;
+}
+
+.comments_list{
+  list-style-type: square;
+  padding-bottom: 5px;
+}
+
+.comment_user{
+  font-size: 16px;
+  color: #999;
+  text-decoration: underline;
+}
 
 @media (max-width: 1024px) {
   .inner {

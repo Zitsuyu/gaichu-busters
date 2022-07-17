@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  validates :comment, presence: true
+  validates :content, presence: true
   validates :post, presence: true
   validates :user, presence: true
 

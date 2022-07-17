@@ -1,20 +1,12 @@
 
- 
-<div class="album py-3 ">
-  <div class="container">
-    <div class="card__body">
-      <%= link_to image_tag( post.image.variant(resize: '300x300'), :class => "img-thumbnail"), post_path(post.id)%>
+<div class="filter"> 
+  <div class="album py-3 ">
+    <div class="container">
       <div class="card__body">
-        <p class="card__summary">
-          <%= post.detail %>
-        </p>
-      </div>  
-       <%= link_to post.user.name, user_path(post.user.id) %>
- 
+          <%= link_to image_tag( post.image.variant(resize: '300x300'), :class => "img-fluid"), post_path(post.id)%>
+      </div>
     </div>
   </div>
 </div>
-
-
 
 

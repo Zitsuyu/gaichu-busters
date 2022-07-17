@@ -1,0 +1,46 @@
+<main class="card col-sm-5 mx-auto mt-5">
+  <div class="card-body">
+    <div class="post__wrapper">
+      <%= link_to @post.user.name, user_path(@post.user.id), class: :post__user %>
+      <% if user_signed_in? && current_user.id == @post.user.id %>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <%= link_to "編集する", edit_post_path(@post.id), :class => "btn btn-primary", method: :get %>
+          <%= link_to "削除する", post_path(@post.id), :class => "btn btn-danger", method: :delete %>
+        </div>
+      <% end %>
+      <div class="card-body">
+        <%= image_tag @post.image, :class => "img-fluid" %>
+      </div>
+      <div class="post__body">
+        <div class="post__detail">
+          <p class="detail__title">害虫の特徴</p>
+          <p class="detail__message">
+            <%= @post.detail %>
+          </p>
+        </div>
+      </div>
+      <div class="post__comments">
+        <% if user_signed_in? %>
+          <%= form_with model: [@post, @comment],local: true do |f|%>
+            <div class="form-group">
+              <%= f.label :comment, "回答する" %><br />
+              <%= f.text_field :content, id:"comment_content", :class => "form-control" %>
+            </div>
+            <div class="actions">
+              <%= f.submit "送信する", :class => "btn btn-outline-success" %>
+            </div>
+          <% end %>
+        <% end %>
+        <ul class="comments_lists">
+        <p class="detail__title">--- 回答 ---</p>
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= comment.content %>
+              <%= link_to comment.user.name , user_path(comment.user.id), class: :comment_user %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
