@@ -1,1 +1,23 @@
-アイウエオ
+
+<main class="main">
+  <div class="inner">
+    <% if user_signed_in? %>
+      <div class="greeting">
+        <%= 'こんにちは、' %>
+        <%= link_to current_user.name, user_path(current_user.id), class: :greeting__link%>
+        <%= 'さん' %>
+      </div>
+    <% end %>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">DANGER</h1>
+          <p class="lead text-muted">詳細に飛ぶと鮮明な画像が表示されます</p>
+        </div>
+      </div>
+    </section> 
+    <div class="card__wrapper">
+      <%= render partial: "post", collection: @post %>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,31 @@
+<%= form_with model: @post, local: true do |f|%>
+
+
+  <div class="post-size">
+    <%= f.label :size_id, "害虫の大きさ" %><br />
+    <%= f.collection_select(:size_id, Size.all, :id, :name, {}, {class:"select-box", id:"size"}) %>
+  </div>
+ 
+
+ 
+  <div class="post-place">
+    <%= f.label :detail, "害虫の出現場所" %><br />
+    <%= f.collection_select(:place_id, Place.all, :id, :name, {}, {class:"select-box", id:"place"}) %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :detail, "害虫の特徴" %><br />
+    <%= f.text_area :detail, id:"post_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "害虫の画像" %><br />
+    <%= f.file_field :image, id:"post_image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "対処法を聞く", class: :form__btn  %>
+  </div>
+
+<% end %>

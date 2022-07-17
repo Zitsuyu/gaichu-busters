@@ -1,0 +1,12 @@
+
+ 
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col">    
+    <div class="card shadow-sm">
+      <%= link_to image_tag( post.image, :class => "bd-placeholder-img card-img-top"), post_path(post.id)%>
+      <div class="card__body">
+        <%= link_to post.user.name, user_path(post.user.id), :class => "btn btn-sm btn-outline-secondary" %>
+      </div>
+    </div>
+  </div>
+</div>
