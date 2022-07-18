@@ -4,12 +4,13 @@
 }
 
 .navbar-brand {
-  width: 150px;
+  width: 140px;
 }
 
 .background {
   background: url('danger.jpg');
 }
+
 .lead-text {
   color: white;
   background-color: black;

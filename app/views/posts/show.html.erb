@@ -11,9 +11,16 @@
       <div class="card-body">
         <%= image_tag @post.image, :class => "img-fluid" %>
       </div>
+      <div class="card-body">
       <div class="post__body">
         <div class="post__detail">
           <p class="detail__title">害虫の特徴</p>
+          <p class="size__detail">サイズ: 
+            <%= @post.size.name %>
+          </p>
+          <p class="place__detail">出現場所: 
+            <%= @post.place.name %>
+          </p>
           <p class="detail__message">
             <%= @post.detail %>
           </p>
