@@ -1,0 +1,23 @@
+<main class="main">
+  <div class="inner">    
+    <div class="background">
+      <section class="py-3 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-bold">==CAUTION!==</h1>
+              <p class="lead-text">詳細では鮮明な画像が表示されます</p>
+            </div>
+        </div>
+      </section>
+    </div>
+
+    <h2 class="form-group">
+      <span>・<%= @user.name %>さんの投稿</span>
+    </h2>
+    <div class="card__wrapper">
+      <%= render partial: "posts/post", collection: @user.posts %>
+    </div>
+  </div>
+</div>
+
+
