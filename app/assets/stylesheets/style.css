@@ -4,7 +4,7 @@
 }
 
 .navbar-brand {
-  width: 130px;
+  width: 200px;
 }
 
 .background {
@@ -72,4 +72,11 @@
     width: 90%;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 599px) {
+  .navbar-brand {
+    width: 100px;
+  }
+
 }
