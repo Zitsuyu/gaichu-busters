@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :post do
-    detail           { '状態' }
+    detail           { Faker::Lorem.sentence }
     size_id          { '2' }
     place_id         { '2' }
     image            { Rack::Test::UploadedFile.new('app/assets/images/test.png') }
