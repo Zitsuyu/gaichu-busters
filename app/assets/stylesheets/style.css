@@ -4,11 +4,12 @@
 }
 
 .navbar-brand {
-  width: 200px;
+  width: 100px;
 }
 
 .background {
   background: url("danger.jpg");
+  margin-top: 70px;
   margin-bottom: 100px;
 }
 
@@ -45,6 +46,7 @@
 .inner {
   width: 1024px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .filter {
