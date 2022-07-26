@@ -8,7 +8,8 @@
 }
 
 .background {
-  background: url('danger.jpg');
+  background: url("danger.jpg");
+  margin-bottom: 100px;
 }
 
 .lead-text {
@@ -24,13 +25,17 @@
   min-height: calc(100vh - 161px);
 }
 
-.detail__title{
+.card {
+  margin-bottom: 100px;
+}
+
+.detail__title {
   font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
 }
 
-.post__user{
+.post__user {
   display: block;
   font-size: 30px;
   color: #999;
@@ -47,21 +52,20 @@
   filter: blur(30px);
 }
 
-
-.post__wrapper{
+.post__wrapper {
   min-height: calc(100vh - 161px);
 }
 
-.comments_lists{
+.comments_lists {
   padding-left: 20px;
 }
 
-.comments_list{
+.comments_list {
   list-style-type: square;
   padding-bottom: 5px;
 }
 
-.comment_user{
+.comment_user {
   font-size: 16px;
   color: #999;
   text-decoration: underline;
@@ -76,7 +80,6 @@
 
 @media (max-width: 599px) {
   .navbar-brand {
-    width: 100px;
+    width: 70px;
   }
-
 }

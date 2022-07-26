@@ -1,0 +1,46 @@
+<main class="main">
+  <div class="inner">
+      <div class="card col-sm-5 mx-auto mt-5">
+        <div class="card-body">
+          <div class="search-contents">
+            <h2 class="mt-1 mb-3">検索</h2>
+            <%= search_form_for @q, url: search_posts_path, html: {id: "detailed-search-form"} do |f| %>
+              <div class="form-group">
+                <%= f.label :size_id_eq, '害虫の大きさ' %>
+                <br>
+                <%= f.collection_select(:size_id_eq, Size.all, :id, :name, {include_blank: "---"}) %>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :place_id_eq, '害虫の出現場所' %>
+                <br>
+                <%= f.collection_select(:place_id_eq, Place.all, :id, :name, {include_blank: "---"}) %>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :detail_cont, '害虫の特徴' %>
+                <br>
+                <%= f.text_field :detail_cont %>
+             </div>
+
+              <%= f.submit '検索' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+    <div class="card__wrapper">
+        <% @posts.each do |post| %>
+        <div class="filter"> 
+          <div class="album py-3 ">
+            <div class="container">
+              <div class="card__body">
+                <%= link_to image_tag( post.image.variant(resize: '300x300'), :class => "img-fluid"), post_path(post.id)%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+    </div>
+  </div>
+</main>
