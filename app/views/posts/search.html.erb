@@ -8,13 +8,13 @@
               <div class="form-group">
                 <%= f.label :size_id_eq, '害虫の大きさ' %>
                 <br>
-                <%= f.collection_select(:size_id_eq, Size.all, :id, :name, {include_blank: "---"}) %>
+                <%= f.collection_select(:size_id_eq, Size.all, :id, :name) %>
               </div>
 
               <div class="form-group">
                 <%= f.label :place_id_eq, '害虫の出現場所' %>
                 <br>
-                <%= f.collection_select(:place_id_eq, Place.all, :id, :name, {include_blank: "---"}) %>
+                <%= f.collection_select(:place_id_eq, Place.all, :id, :name) %>
               </div>
 
               <div class="form-group">
