@@ -39,7 +39,11 @@ class PostsController < ApplicationController
     else 
       render :edit
     end
+  end
 
+  def search
+    @q = Post.ransack(params[:q])
+    @posts = @q.result
   end
 
   def destroy
