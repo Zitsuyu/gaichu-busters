@@ -21,14 +21,14 @@ RSpec.describe Post, type: :model do
         expect(@post.errors.full_messages).to include("Detail can't be blank")
       end
 
-      it '害虫の大きさに「---」が選択されている場合は投稿できない' do
-        @post.size_id = "1"
+      it '害虫の大きさが空では投稿できない' do
+        @post.size_id = ""
         @post.valid?
         expect(@post.errors.full_messages).to include("Size can't be blank")
       end
 
-      it '害虫の出現場所に「---」が選択されている場合は投稿できない' do
-        @post.place_id = '1'
+      it '害虫の出現場所が空では投稿できない' do
+        @post.place_id = ""
         @post.valid?
         expect(@post.errors.full_messages).to include("Place can't be blank")
       end

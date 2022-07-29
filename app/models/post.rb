@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   validates :detail, presence: true
-  validates :size_id, presence: true, numericality: { other_than: 1, message: "can't be blank" } 
-  validates :place_id, presence: true, numericality: { other_than: 1, message: "can't be blank" } 
+  validates :size_id, presence: true
+  validates :place_id, presence: true
   validates :image, presence: true
 
 
