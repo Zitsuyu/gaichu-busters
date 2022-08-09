@@ -3,7 +3,8 @@
 スマートフォンでの使用を想定しているため、レスポンシブ対応をしています。<br>
 男女問わず使用することを想定し、トップページでは画像にモザイクをかけています。<br>
 <br>
-<img width="354" alt="スクリーンショット 2022-08-08 11 55 15" src="https://user-images.githubusercontent.com/106902284/183329584-0301aace-cb86-4d9b-9c6e-aa4c512fb97d.png">
+<img width="360" alt="スクリーンショット 2022-08-09 14 27 36" src="https://user-images.githubusercontent.com/106902284/183571532-091d60a3-2983-46be-ae7c-c7c559f07fc7.png">
+
 <img width="355" alt="スクリーンショット 2022-08-08 12 03 22" src="https://user-images.githubusercontent.com/106902284/183330234-d56813f1-975e-4f36-8b8e-3d0a4e028e07.png">
 
 ## URL
