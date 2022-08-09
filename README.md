@@ -5,7 +5,7 @@
 <br>
 <p>
 <img width="351" alt="スクリーンショット 2022-08-09 14 27 36" src="https://user-images.githubusercontent.com/106902284/183571856-3686f8ac-614e-4cd5-b96a-3ec3d1ee6dde.png">
-<img width="355" alt="スクリーンショット 2022-08-08 12 03 22" src="https://user-images.githubusercontent.com/106902284/183330234-d56813f1-975e-4f36-8b8e-3d0a4e028e07.png">
+<img width="340" alt="スクリーンショット 2022-08-08 12 03 22" src="https://user-images.githubusercontent.com/106902284/183572975-133e9508-0305-4e6f-927c-29e3b3dfd39a.png">
 </p>
 ## URL
 https://gaichu-busters.herokuapp.com/
